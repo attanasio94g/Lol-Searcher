@@ -2,6 +2,7 @@
   "manifest_version": 2,
 
   "name": "Op.gg",
+  "options_page": "settings.html",
   "description": "Simple extension for Opera and Chrome that open a page of Op.gg with a defined nickname.",
   "version": "0.1",
   "background": {"scripts": ["background.js"]},
@@ -11,4 +12,5 @@
     "default_icon": "icon.png",
     "default_title": "Go to Op.gg!"
   }
+
 }
