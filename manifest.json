@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Op.gg",
-  "description": "Sample extension for the 'Making your first extension' article. A button will be created in the toolbar, which upon being clicked, will open a new tab which goes to Dev.Opera",
-  "version": "1.0",
+  "description": "Simple extension for Opera and Chrome that open a page of Op.gg with a defined nickname.",
+  "version": "0.1",
   "background": {"scripts": ["background.js"]},
 
   "permissions": ["tabs"],
