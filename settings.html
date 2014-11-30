@@ -3,14 +3,10 @@
 	<title>Settings</title>
 	<script type="text/javascript" src="settings.js"></script>
 </head>
-<body onload="loadOptions()">
 	<h1>Settings</h1>
 	<form>
-		<input type="text" name="nickname">
+		<span>Nickname</span><input type="text" id="value"/>
+		<input type="button" id="save" value="Save"/>
 	</form>
-	<br />
-	<button onclick="saveOptions()">Save</button>
-	<br />
-	<button onclick="eraseOptions()">Restore default</button>
 </body>
 </html>
