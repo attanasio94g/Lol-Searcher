@@ -1,14 +1,16 @@
 <html>
 <head>
-  <title>Settings</title>
+	<title>Settings</title>
+	<script type="text/javascript" src="settings.js"></script>
 </head>
-
-<body>
+<body onload="loadOptions()">
+	<h1>Settings</h1>
+	<form>
+		<input type="text" name="nickname">
+	</form>
+	<br />
+	<button onclick="saveOptions()">Save</button>
+	<br />
+	<button onclick="eraseOptions()">Restore default</button>
 </body>
-
-<form>
-<input type="text" name="nickname">
-<input type="submit" value="Salva" name="Salva">
-</form> 
-
 </html>
