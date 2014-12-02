@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Settings</title>
@@ -6,8 +5,10 @@
 </head>
 	<h1>Settings</h1>
 	<form>
-		<span>Nickname</span><input type="text" id="value"/>
-		<input type="button" id="save" value="Save"/>
+		<span>Nickname</span><input type="text" id="value1"/>
+		<input id="clickMe" type="button" value="Save" onclick="Save();" />
+		<input id="clickMe2" type="button" value="Load" onclick="Load();" />
 	</form>
+	<span id="nicknameonpage"></span>
 </body>
 </html>
