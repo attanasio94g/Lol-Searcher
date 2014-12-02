@@ -1,4 +1,4 @@
-var nickname = "master94ga";
+var nickname = localStorage.getItem("key1");
 
 chrome.browserAction.onClicked.addListener(function() {
   chrome.tabs.query({currentWindow: true, active: true}, function(tab) {
