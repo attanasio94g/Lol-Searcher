@@ -6,7 +6,7 @@ function Save(){
 
 //Load the nickname from local storage
 function Load(){
-    var key1 = localStorage.getItem("key1"); //Load the nickname from the local storage
+    var key1 = localStorage.getItem("key1");
     document.getElementById("nicknameonpage").innerHTML = localStorage.getItem("key1");
 }
 
