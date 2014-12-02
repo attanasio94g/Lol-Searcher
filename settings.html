@@ -1,16 +1,32 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Settings</title>
-	<script type="text/javascript" src="settings.js"></script>
-</head>
-	<h1>Settings</h1>
-	<form>
-		<span>Nickname</span><input type="text" id="value1"/>
-		<input id="Button1" type="button" value="Save" onclick="Save();" />
-		<input id="Button2" type="button" value="Load" onclick="Load();" />
-		<input id="Button3" type="button" value="Default" onclick="Default();" />
-	</form>
-	<span id="prenick"></span>
-	<span id="nicknameonpage"></span>
+<head><title>Op.gg options</title></head>
+<body>
+
+Server:
+<select id="server">
+ <option value="kr">KR</option>
+ <option value="euw">EUW</option>
+ <option value="oce">OCE</option>
+ <option value="las">LAS</option>
+ <option value="ru">RU</option>
+ <option value="na">NA</option>
+ <option value="eune">EUNE</option>
+ <option value="br">BR</option>
+ <option value="lan">LAN</option>
+ <option value="tr">TR</option>
+</select>
+
+<label>
+  	Nickname
+  <input type="text" id="nickname"></input>
+</label>
+
+<div id="status"></div>
+<button id="save">Save</button>
+<BR></BR>
+Current nickname:
+<span id="nicknameonpage"></span>
+<script src="options.js"></script>
 </body>
 </html>
