@@ -6,7 +6,7 @@ function Save(){
 
 //Load the nickname from local storage
 function Load(){
-    var key1 = localStorage.getItem("key1");
+    document.getElementById("prenick").innerHTML = "You current nickname:";
     document.getElementById("nicknameonpage").innerHTML = localStorage.getItem("key1");
 }
 
