@@ -12,5 +12,5 @@ function Load(){
 
 //Restore to default
 function Default(){
-localStorage.removeItem("key1");
+	localStorage.removeItem("key1");
 }
