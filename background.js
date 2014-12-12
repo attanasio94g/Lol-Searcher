@@ -46,6 +46,12 @@ chrome.browserAction.onClicked.addListener(function(){
           chrome.tabs.create( { "url": "settings.html" } );
           });
     }
+    else if ((link1 == "") || (link2 == ""))
+    {
+          chrome.tabs.query({currentWindow: true, active: true}, function(tab) {
+          chrome.tabs.create( { "url": "settings.html" } );
+          });
+    }
     else if ((link1 == "kr"))
     {
         chrome.tabs.query({currentWindow: true, active: true}, function(tab) {

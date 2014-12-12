@@ -21,7 +21,7 @@ function reload_page()
 function restore_options() {
   // Use default value server = 'TR' and nickname = null.
   chrome.storage.sync.get({
-    yourserver: 'kr',
+    yourserver: null,
     yournickname: null
   }, function(items) {
     document.getElementById('server').value = items.yourserver;
