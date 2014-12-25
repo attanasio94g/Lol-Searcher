@@ -8,6 +8,10 @@ a{
 	text-decoration: none;
 }
 
+.mainheader h2
+{
+	margin-top: -5px;
+}
 .options h2
 {
 	margin-top: -5px;
