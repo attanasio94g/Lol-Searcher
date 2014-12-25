@@ -57,13 +57,14 @@ a{
 	border-radius: 5px;
 }
 
-/*General options css*/
-.options h2
+/*About css*/
+.about h2
 {
 	margin-top: -5px;
+	color: blue;
 }
 
-.options h1
+.about h1
 {
 	background-color: #2B547E;
 	color: white;
@@ -71,16 +72,7 @@ a{
 	text-align: center;
 }
 
-.options h3
-{
-	background-color: #2B547E;
-	color: white;
-	border-radius: 5px;
-	margin-right: 35%;
-	margin-left: 35%;
-}
-
-.options
+.about
 {
 	background-color: #E1E1E1;
 	margin-left: auto;
@@ -89,18 +81,3 @@ a{
     border-radius: 5px;
     text-align: center;
 }    
-
-
-.version h4
-{
-	background-color: #F0F0F0;
-	margin-left: 70%;
-	color: black;
-}
-
-.server
-{
-	text-align: center;
-}
-
-
