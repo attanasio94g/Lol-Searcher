@@ -8,12 +8,12 @@ a{
 	text-decoration: none;
 }
 
-h2
+.options h2
 {
 	margin-top: -5px;
 }
 
-h1
+.options h1
 {
 	background-color: #2B547E;
 	color: white;
@@ -21,6 +21,27 @@ h1
 	text-align: center;
 }
 
+.options h3
+{
+	background-color: #2B547E;
+	color: white;
+	border-radius: 5px;
+	margin-right: 35%;
+	margin-left: 35%;
+}
+
+.version h4
+{
+	background-color: #F0F0F0;
+	margin-left: 70%;
+	color: black;
+}
+
+.server
+{
+	text-align: center;
+
+}
 .mainheader
 {
 	margin: 0 auto;
@@ -34,6 +55,7 @@ h1
     margin-right: auto;
     width: 30%;
     border-radius: 5px;
+    text-align: center;
 }    
 
 .mainheader ul li img{
