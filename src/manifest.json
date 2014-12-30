@@ -10,7 +10,8 @@
   "permissions": [
   "tabs", 
   "storage",
-  "http://*/*"
+  "http://*.op.gg/summoner/userName=*",
+  "http://www.op.gg/summoner/userName=*"
   ],
 
   "icons": { "16": "img/img16.png",
