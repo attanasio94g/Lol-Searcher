@@ -4,7 +4,7 @@
   "name": "Op.gg",
   "options_page": "settings.html",
   "description": "Simple extension for Opera and Chrome that open a page of Op.gg with a defined nickname.",
-  "version": "0.1",
+  "version": "0.2",
   "background": {"scripts": ["background.js"]},
 
   "permissions": [
