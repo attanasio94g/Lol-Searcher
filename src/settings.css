@@ -88,14 +88,8 @@ a{
     width: 30%;
     border-radius: 5px;
     text-align: center;
-}
-
-.options button
-{
-	margin-left: 35%;
-    margin-right: 35%;
-	float: right;
 }    
+
 
 .version h4
 {
