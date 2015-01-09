@@ -10,10 +10,11 @@ My main platform is Opera browser but I will test and make compatible also with 
 CHANGELOG                                         
 =====
 
-0.2                                                               
+0.2
 -Manifest: updated version to 0.2                                                        
 -Manifest: improved permission                                                                     
 -Options: button save moved to right
+-New style for about page
 
 0.1 25/12/14                                                                    
 -First release                                                                                         
