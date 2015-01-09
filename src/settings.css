@@ -18,6 +18,7 @@ a{
 {
 	margin: 0 auto;
 	background-color: #2B547E;
+	border-bottom: solid 2px #20485B;
 }
 
 .mainheader ul li img{
@@ -43,7 +44,7 @@ a{
 .mainheader nav a:link, .mainheader nav a:visited{
 	color: #fff;
 	display: inline-block;
-	padding: 30px 50px;
+	padding: 31px 50px;
 	height: 10px;
 }
 
