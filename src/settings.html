@@ -16,10 +16,13 @@
 		</ul></nav>		
 	</header>
 
-	<div class="options">
-		<h1>General Options</h1>
-		<div class="server">
-			<h3>Server:</h3>
+	<div class="one">
+		<div class="title">
+			<span>Server</span>
+		</div>
+
+		<div class="data">
+			<span>Select the server of the account.</span>
 			<select id="server">
  				<option value="kr">KR</option>
  				<option value="euw">EUW</option>
@@ -31,24 +34,31 @@
  				<option value="br">BR</option>
  				<option value="lan">LAN</option>
  				<option value="tr">TR</option>
-			</select></br>
+			</select>
 		</div>
-
-		<label>
-  			<h3>Nickname</br></h3>
-  			<input type="text" id="nickname"></input></p>
-		</label>
-
-		<button id="save">Save</button>
-		</BR>
-
-		<h3>Current nickname</h3>
-		<span id="nicknameonpage"></span>
 	</div>
 
-	<div class="version">
-		<br>
-		<i><h4>Version: 0.1</h4></i>
+	<div class="two">
+		<div class="title">
+			<span>Username</span>
+		</div>
+
+		<div class="data">
+			<span>Insert your username and after press save:</span>
+			<input type="text" id="nickname"></input></p>
+			<button id="save" class="flat-button">Save</button><br>
+		</div>
+	</div>
+
+	<div class="three">
+		<div class="title">
+			<span>Current username</span>
+		</div>
+
+		<div class="data">
+			<span>Display current username saved on the extension: </span>
+			<i><span id="nicknameonpage"></span></i>
+		</div>
 	</div>
 
 	<script src="options.js"></script>

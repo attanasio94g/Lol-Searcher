@@ -59,55 +59,83 @@ a{
 }
 
 /*General options css*/
-.options h2
+.one
 {
-	margin-top: -5px;
-}
-
-.options h1
-{
-	background-color: #2B547E;
-	color: white;
-	border-radius: 5px;
-	text-align: center;
-}
-
-.options h3
-{
-	background-color: #2B547E;
-	color: white;
-	border-radius: 5px;
-	margin-right: 35%;
-	margin-left: 35%;
-}
-
-.options
-{
-	background-color: #E1E1E1;
+	width: 60%;
 	margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    border-radius: 5px;
-    text-align: center;
-}    
-
-.options button
-{
-	margin-left: 35%;
-	margin-right: 35%;
-	float: right;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 16px;
 }
 
-.version h4
+.two
 {
-	background-color: #F0F0F0;
-	margin-left: 70%;
-	color: black;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 56px;
 }
 
-.server
+.three
 {
-	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 16px;
 }
 
+.title
+{
+	width: 20%;
+	font-weight: bold;
+	vertical-align: top;
+	white-space: nowrap;
+	float: left;
+}
 
+.data
+{
+	width: 80%;
+	float: left;
+}
+
+select {
+  padding: 0 0 0 5px;
+  width: 100px;
+  height: 25px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  -webkit-appearance: none;
+  background-color: #2B547E;
+  cursor: pointer;
+}
+
+.flat-button {
+  width: 150px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 1px #A4A5A6;
+  border-radius: 1px;
+  background-color: #2B547E;
+  color: white;
+}
+
+.flat-button:hover {
+  background-color: #1589FF;
+  color: #fff;
+}
