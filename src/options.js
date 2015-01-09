@@ -25,7 +25,7 @@ function restore_options() {
     yournickname: null
   }, function(items) {
     document.getElementById('server').value = items.yourserver;
-    document.getElementById("nicknameonpage").innerHTML = items.yournickname;
+    document.getElementById("nicknameonpage").innerText = items.yournickname;
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
