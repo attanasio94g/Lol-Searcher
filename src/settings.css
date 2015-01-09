@@ -122,6 +122,11 @@ select {
   cursor: pointer;
 }
 
+select:hover
+{
+	background-color: #1589FF;
+}
+
 .flat-button {
   width: 150px;
   height: 25px;
