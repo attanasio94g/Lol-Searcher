@@ -1,7 +1,6 @@
 /*General css*/
 .body{
 	margin: 0 auto;
-	background-color: #F0F0F0;
 }
 
 a{
@@ -18,6 +17,7 @@ a{
 {
 	margin: 0 auto;
 	background-color: #2B547E;
+	border-bottom: solid 2px #20485B;
 }
 
 .mainheader ul li img{
@@ -43,7 +43,7 @@ a{
 .mainheader nav a:link, .mainheader nav a:visited{
 	color: #fff;
 	display: inline-block;
-	padding: 30px 50px;
+	padding: 31px 50px;
 	height: 10px;
 }
 
@@ -57,27 +57,50 @@ a{
 	border-radius: 5px;
 }
 
-/*About css*/
-.about h2
-{
-	margin-top: -5px;
-	color: blue;
-}
-
-.about h1
-{
-	background-color: #2B547E;
-	color: white;
-	border-radius: 5px;
-	text-align: center;
-}
-
 .about
 {
-	background-color: #E1E1E1;
+	width: 60%;
 	margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    border-radius: 5px;
-    text-align: center;
-}    
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+}
+
+.about td 
+{
+	font-weight: bold;
+	vertical-align: top;
+	white-space: nowrap;
+	border-bottom: solid 1px #E5E5E5;
+	padding: 20px 0px 20px 0px;
+}
+
+.ptitle
+{
+	width: 250px;
+}
+
+.content span
+{
+	font-weight: normal;
+	white-space: normal;
+}
+
+.flat-button {
+  margin-top: 10px; 
+  width: 150px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 1px #A4A5A6;
+  border-radius: 1px;
+  background-color: #2B547E;
+  color: white;
+}
+
+.flat-button:hover {
+  background-color: #1589FF;
+  color: #fff;
+}
