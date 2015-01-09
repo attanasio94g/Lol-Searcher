@@ -14,7 +14,8 @@ CHANGELOG
 -Manifest: updated version to 0.2                                                        
 -Manifest: improved permission                                                                     
 -Options: button save moved to right                                                                               
--New style for about page
+-New style for about page                                                                                   
+-New style for options page
 
 0.1 25/12/14                                                                    
 -First release                                                                                         
