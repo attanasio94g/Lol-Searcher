@@ -15,7 +15,9 @@ CHANGELOG
 -Manifest: improved permission                                                                     
 -Options: button save moved to right                                                                               
 -New style for about page                                                                                   
--New style for options page
+-New style for options page                                                                                                 
+-Max 16 character for summoner name                                                                                                               
+-Impossible to insert html tags into the summoner name                                                                          
 
 0.1 25/12/14                                                                    
 -First release                                                                                         
