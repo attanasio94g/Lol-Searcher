@@ -1,7 +1,10 @@
 // Saves options to chrome.storage
 function save_options() {
   var server = document.getElementById('server').value;
-  var nickname = document.getElementById('nickname').value;
+  var prenickname = document.getElementById('nickname').value;
+
+  var nickname = prenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
+
   chrome.storage.sync.set({
     yourserver: server,
     yournickname: nickname
