@@ -1,0 +1,146 @@
+/*General css*/
+.body{
+	margin: 0 auto;
+	background-color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*Main header css*/
+.mainheader h2
+{
+	margin-top: -5px;
+}
+
+.mainheader
+{
+	margin: 0 auto;
+	background-color: #2B547E;
+	border-bottom: solid 2px #20485B;
+}
+
+.mainheader ul li img{
+	width: 50%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainheader nav{
+	height: 70px;
+}
+
+.mainheader nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited{
+	color: #fff;
+	display: inline-block;
+	padding: 31px 50px;
+	height: 10px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active a:visited{
+	background-color: #1589FF;
+	text-shadow: none;
+} 
+
+.mainheader nav ul li a{
+	border-radius: 5px;
+}
+
+/*General options css*/
+.one
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 16px;
+}
+
+.two
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 56px;
+}
+
+.three
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+   	font-size: 14px;
+  	font-family: arial,sans-serif;
+  	border-bottom: solid 1px #E5E5E5;
+  	padding: 20px 0px 20px 0px;
+  	height: 16px;
+}
+
+.title
+{
+	width: 20%;
+	font-weight: bold;
+	vertical-align: top;
+	white-space: nowrap;
+	float: left;
+}
+
+.data
+{
+	width: 80%;
+	float: left;
+}
+
+select {
+  padding: 0 0 0 5px;
+  width: 100px;
+  height: 25px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  -webkit-appearance: none;
+  background-color: #2B547E;
+  cursor: pointer;
+}
+
+select:hover
+{
+	background-color: #1589FF;
+}
+
+.flat-button {
+  width: 150px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 1px #A4A5A6;
+  border-radius: 1px;
+  background-color: #2B547E;
+  color: white;
+}
+
+.flat-button:hover {
+  background-color: #1589FF;
+  color: #fff;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Op.gg",
+  "options_page": "settings.html",
+  "description": "Simple extension for Opera and Chrome that open a page of Op.gg with a defined nickname.",
+  "version": "0.2",
+  "background": {"scripts": ["background.js"]},
+
+  "permissions": [
+  "tabs", 
+  "storage",
+  "http://*.op.gg/summoner/userName=*",
+  "http://www.op.gg/summoner/userName=*"
+  ],
+
+  "icons": { "16": "img/img16.png",
+           "48": "img/img48.png",
+          "128": "img/img128.png" },
+
+  "browser_action": {
+    "default_icon": "img/img48.png",
+    "default_title": "Go to Op.gg!"
+  }
+
+}

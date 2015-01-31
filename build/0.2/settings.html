@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Op.gg Options!</title>
+	<link rel="stylesheet" type="text/css" href="settings.css">
+</head>
+
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><img src="img/img128.png"></li>
+			<li class="active"><a href="settings.html"><h2>Settings</h2></a></li>
+			<li><a href="about.html"><h2>About</h2></a></li>
+		</ul></nav>		
+	</header>
+
+	<div class="one">
+		<div class="title">
+			<span>Server</span>
+		</div>
+
+		<div class="data">
+			<span>Select the server of the account.</span>
+			<select id="server">
+ 				<option value="kr">KR</option>
+ 				<option selected value="euw">EUW</option>
+ 				<option value="oce">OCE</option>
+ 				<option value="las">LAS</option>
+ 				<option value="ru">RU</option>
+ 				<option value="na">NA</option>
+ 				<option value="eune">EUNE</option>
+ 				<option value="br">BR</option>
+ 				<option value="lan">LAN</option>
+ 				<option value="tr">TR</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="two">
+		<div class="title">
+			<span>Username</span>
+		</div>
+
+		<div class="data">
+			<span>Insert your username and after press save:</span>
+			<input type="text" id="nickname" maxlength="16"></input></p>
+			<button id="save" class="flat-button">Save</button><br>
+		</div>
+	</div>
+
+	<div class="three">
+		<div class="title">
+			<span>Current username</span>
+		</div>
+
+		<div class="data">
+			<span>Display current username saved on the extension: </span>
+			<i><span id="nicknameonpage"></span></i>
+		</div>
+	</div>
+
+	<script src="options.js"></script>
+</body>
+</html>
