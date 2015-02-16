@@ -22,16 +22,23 @@ chrome.storage.sync.get(function(items) {
     // Now save the updated items using set
     chrome.storage.sync.set(items, function() {
         console.log('Data successfully saved to the storage!');
-        console.log(items.mydata);
     });
 });
 }
 
 function show()
 {
-    chrome.storage.sync.get(function(items) {
-        document.getElementById('server').value = items.mydata.yourserver;
-        document.getElementById("nicknameonpage").innerText = items.mydata.yournickname;
+    chrome.storage.sync.get(function(items) 
+    {
+        //document.getElementById('server').value = items.mydata[2].yourserver;
+        //document.getElementById("nicknameonpage").innerText = items.mydata[2].yournickname;
+
+        console.log(items.mydata);
+
+        for (var i=0; i<mydata.length; i++ )
+        {
+            $("p").append("<li>"+ items.mydata[i].yourserver + "  " + items.mydata[i].yournickname +"</li>");
+        }
     });
 }
 
