@@ -1,39 +1,45 @@
-// Saves options to chrome.storage
-function save_options() {
-  var server = document.getElementById('server').value;
-  var prenickname = document.getElementById('nickname').value;
+var mydata = [];
 
-  var nickname = prenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
-
-  chrome.storage.sync.set({
-    yourserver: server,
-    yournickname: nickname
-  }, function() {
-    // Update status to let user know options were saved.
-    var status = document.getElementById('status');
-  });
-}
-
-function reload_page()
+function addData()
 {
-  location.reload();
+    var currentserver = document.getElementById('server').value;
+    var currentprenickname = document.getElementById('nickname').value;
+
+    var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
+
+    //mydata.push({yourserver: currentserver, yournickname: nickname});
+
+// Get all the items stored in the storage
+chrome.storage.sync.get(function(items) {
+    if (Object.keys(items).length > 0 && items.mydata) {
+        // The data array already exists, add to it the new server and nickname
+        items.mydata.push({yourserver: currentserver, yournickname: nickname});
+    } else {
+        // The data array doesn't exist yet, create it
+        items.mydata = [{yourserver: currentserver, yournickname: nickname}];
+    }
+
+    // Now save the updated items using set
+    chrome.storage.sync.set(items, function() {
+        console.log('Data successfully saved to the storage!');
+        console.log(items.mydata);
+    });
+});
 }
 
-// Restores select box and text using the preferences
-// stored in chrome.storage.
-function restore_options() {
-  // Use default value server = 'TR' and nickname = null.
-  chrome.storage.sync.get({
-    yourserver: null,
-    yournickname: null
-  }, function(items) {
-    document.getElementById('server').value = items.yourserver;
-    document.getElementById("nicknameonpage").innerText = items.yournickname;
-  });
+function show()
+{
+    chrome.storage.sync.get(function(items) {
+        document.getElementById('server').value = items.mydata.yourserver;
+        document.getElementById("nicknameonpage").innerText = items.mydata.yournickname;
+    });
 }
-document.addEventListener('DOMContentLoaded', restore_options);
+
+
+
+document.addEventListener('DOMContentLoaded', show);
+
 document.getElementById('save').addEventListener('click', function() 
     {
-    save_options()
-    reload_page()
+    addData()
     });
