@@ -35,14 +35,12 @@ function show()
 
         console.log(items.mydata);
 
-        for (var i=0; i<mydata.length; i++ )
+        for (var i=0; i<items.mydata.length; i++ )
         {
-            $("p").append("<li>"+ items.mydata[i].yourserver + "  " + items.mydata[i].yournickname +"</li>");
+            $(".summoners").append("<li>"+ items.mydata[i].yourserver + "  " + items.mydata[i].yournickname +"</li>");
         }
     });
 }
-
-
 
 document.addEventListener('DOMContentLoaded', show);
 
