@@ -30,14 +30,15 @@ function show()
 {
     chrome.storage.sync.get(function(items) 
     {
-        //document.getElementById('server').value = items.mydata[2].yourserver;
-        //document.getElementById("nicknameonpage").innerText = items.mydata[2].yournickname;
-
         console.log(items.mydata);
 
         for (var i=0; i<items.mydata.length; i++ )
         {
-            $(".summoners").append("<li>"+ items.mydata[i].yourserver + "  " + items.mydata[i].yournickname +"</li>");
+           //$(".datasu").append("<li>"+ "<b>" + items.mydata[i].yourserver + "</b>  " + items.mydata[i].yournickname +"</li>");
+           var opt = document.createElement("option");
+           opt.value= i;
+           opt.innerHTML = items.mydata[i].yournickname;
+           newselect.appendChild(opt);
         }
     });
 }
