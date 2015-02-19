@@ -38,12 +38,38 @@ function show()
            var opt = document.createElement("option");
            opt.value= i;
            opt.innerHTML = items.mydata[i].yournickname;
-           newselect.appendChild(opt);
+           summname.appendChild(opt);
         }
     });
+
+    //show selected username
+}
+
+function addsummname()
+{
+     var index = document.getElementById('summname').value;
+     console.log(index);
+
+     //Save the index of summoners name selected into chrome storage
+    chrome.storage.sync.set({
+    yourindex: index,
+     }, function() {
+     });
+
+         chrome.storage.sync.get(function(items) 
+    {
+        console.log(items.yourindex)
+        console.log(items.mydata[index].yournickname)
+    });
+
 }
 
 document.addEventListener('DOMContentLoaded', show);
+
+document.getElementById('save2').addEventListener('click', function() 
+    {
+    addsummname()
+    });
 
 document.getElementById('save').addEventListener('click', function() 
     {
