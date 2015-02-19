@@ -4,7 +4,7 @@
   "name": "Op.gg",
   "options_page": "settings.html",
   "description": "Simple extension for Opera and Chrome that open a page of lol related site with a defined nickname.",
-  "version": "1.0",
+  "version": "0.4",
   "background": {"scripts": ["background.js"]},
 
   "permissions": [
