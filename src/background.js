@@ -10,35 +10,26 @@ chrome.runtime.onInstalled.addListener(function() {
 
 //Load value from storage at start of browser
 chrome.runtime.onStartup.addListener(function(){
-   chrome.storage.sync.get({
-    yourserver: null,
-    yournickname: null
-  }, function(items) {
-    link1 = items.yourserver;
-    link2 = items.yournickname;
+   chrome.storage.sync.get(function(items) {
+    link1 = items.mydata[items.yourindex].yourserver;
+    link2 = items.mydata[items.yourindex].yournickname;
   });
 });
 
 //Load value from storage on click of icon
 chrome.browserAction.onClicked.addListener(function(){
-   chrome.storage.sync.get({
-    yourserver: null,
-    yournickname: null
-  }, function(items) {
-    link1 = items.yourserver;
-    link2 = items.yournickname;
+   chrome.storage.sync.get(function(items) {
+    link1 = items.mydata[items.yourindex].yourserver;
+    link2 = items.mydata[items.yourindex].yournickname;
   });
 });
 
 //Open settings if there isn't nickname or server in storage
 //If a nickname and server is on storage open op.gg
 chrome.browserAction.onClicked.addListener(function(){
-   chrome.storage.sync.get({
-    yourserver: null,
-    yournickname: null
-  }, function(items) {
-    link1 = items.yourserver;
-    link2 = items.yournickname;
+   chrome.storage.sync.get(function(items) {
+    link1 = items.mydata[items.yourindex].yourserver;
+    link2 = items.mydata[items.yourindex].yournickname;
 
     if ((link1 == null) && (link2 == null))
     {

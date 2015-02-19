@@ -7,8 +7,6 @@ function addData()
 
     var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
 
-    //mydata.push({yourserver: currentserver, yournickname: nickname});
-
 // Get all the items stored in the storage
 chrome.storage.sync.get(function(items) {
     if (Object.keys(items).length > 0 && items.mydata) {
@@ -40,9 +38,10 @@ function show()
            opt.innerHTML = items.mydata[i].yournickname;
            summname.appendChild(opt);
         }
-    });
 
-    //show selected username
+        document.getElementById("selectedserver").innerText = items.mydata[items.yourindex].yourserver;
+        document.getElementById("selectedsumm").innerText = items.mydata[items.yourindex].yournickname;
+    });
 }
 
 function addsummname()
@@ -61,7 +60,11 @@ function addsummname()
         console.log(items.yourindex)
         console.log(items.mydata[index].yournickname)
     });
+}
 
+function reload_page()
+{
+  location.reload();
 }
 
 document.addEventListener('DOMContentLoaded', show);
@@ -69,9 +72,11 @@ document.addEventListener('DOMContentLoaded', show);
 document.getElementById('save2').addEventListener('click', function() 
     {
     addsummname()
+    reload_page()
     });
 
 document.getElementById('save').addEventListener('click', function() 
     {
     addData()
+    reload_page()
     });
