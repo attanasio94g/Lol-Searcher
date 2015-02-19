@@ -21,6 +21,15 @@ chrome.storage.sync.get(function(items) {
     chrome.storage.sync.set(items, function() {
         console.log('Data successfully saved to the storage!');
     });
+
+    //Default if is first summoners 
+    if (items.mydata.length<2)
+    {
+        chrome.storage.sync.set({
+        yourindex: 0,
+        }, function() {
+        });
+    }
 });
 }
 
@@ -32,7 +41,6 @@ function show()
 
         for (var i=0; i<items.mydata.length; i++ )
         {
-           //$(".datasu").append("<li>"+ "<b>" + items.mydata[i].yourserver + "</b>  " + items.mydata[i].yournickname +"</li>");
            var opt = document.createElement("option");
            opt.value= i;
            opt.innerHTML = items.mydata[i].yournickname;
