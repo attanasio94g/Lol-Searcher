@@ -47,8 +47,8 @@ function show()
            summname.appendChild(opt);
         }
 
-        document.getElementById("selectedserver").innerText = items.mydata[items.yourindex].yourserver;
-        document.getElementById("selectedsumm").innerText = items.mydata[items.yourindex].yournickname;
+        //Show username selected
+        summname.selectedIndex = items.yourindex;
     });
 }
 
@@ -62,12 +62,16 @@ function addsummname()
     yourindex: index,
      }, function() {
      });
+}
 
-         chrome.storage.sync.get(function(items) 
-    {
-        console.log(items.yourindex)
-        console.log(items.mydata[index].yournickname)
-    });
+function addsite()
+{
+    var selectedsite = document.getElementById('site').value;
+
+    chrome.storage.sync.set({
+    yoursite: selectedsite,
+     }, function() {
+     });
 }
 
 function reload_page()
@@ -76,6 +80,12 @@ function reload_page()
 }
 
 document.addEventListener('DOMContentLoaded', show);
+
+document.getElementById('save3').addEventListener('click', function() 
+    {
+    addsite()
+    reload_page()
+    });
 
 document.getElementById('save2').addEventListener('click', function() 
     {
