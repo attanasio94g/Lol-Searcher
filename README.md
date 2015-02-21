@@ -1,10 +1,9 @@
-Op.gg
+Lol-Searcher
 =====
 
-This extension will open your "Op.gg" page when you click on the icon.
+This extension will open a page on the selected site with your data when you click on the icon.
 Is an unofficial extension, made to learn and improve myself.
 
-The extensions is in early stage and I did a first  working version.
 My main platform is Opera browser but I will test and make compatible also with Chrome browser.
 
 CHANGELOG                                         
