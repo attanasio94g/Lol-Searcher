@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Op.gg",
+  "name": "Lol Searcher",
   "options_page": "settings.html",
   "description": "Simple extension for Opera and Chrome that open a page of lol related site with a defined nickname.",
   "version": "0.4",
