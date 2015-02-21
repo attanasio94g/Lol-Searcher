@@ -8,56 +8,6 @@ a{
 	text-decoration: none;
 }
 
-/*Main header css*/
-.mainheader h2
-{
-	margin-top: -5px;
-}
-
-.mainheader
-{
-	margin: 0 auto;
-	background-color: #2B547E;
-	border-bottom: solid 2px #20485B;
-}
-
-.mainheader ul li img{
-	width: 50%;
-	height: auto;
-	margin: 2% 0;
-}
-
-.mainheader nav{
-	height: 70px;
-}
-
-.mainheader nav ul{
-	list-style: none;
-	margin: 0 auto;
-}
-
-.mainheader nav ul li{
-	float: left;
-	display: inline;
-}
-
-.mainheader nav a:link, .mainheader nav a:visited{
-	color: #fff;
-	display: inline-block;
-	padding: 31px 50px;
-	height: 10px;
-}
-
-.mainheader nav a:hover, .mainheader nav a:active,
-.mainheader nav .active a:link, .mainheader nav .active a:visited{
-	background-color: #1589FF;
-	text-shadow: none;
-} 
-
-.mainheader nav ul li a{
-	border-radius: 5px;
-}
-
 /*General options css*/
 .one
 {

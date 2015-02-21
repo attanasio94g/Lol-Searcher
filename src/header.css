@@ -1,0 +1,48 @@
+/*Main header css*/
+.mainheader
+{
+	margin: 0 auto;
+	background-color: #040507;
+	border-bottom: solid 2px #0C2830;
+}
+
+.mainheader ul li img{
+	width: 45%;
+	height: auto;
+	margin: 5px;
+}
+
+.mainheader nav{
+	height: 40px;
+}
+
+.mainheader nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited{
+	color: #cfba6b;
+	display: inline-block;
+	padding-top: 13px;
+	padding-left: 40px;
+	height: 40px;
+	font-size: 14px;
+	font-family: "Times New Roman";
+}
+
+.mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active a:visited{
+	color: white;
+	text-shadow: none;
+} 
+
+.mainheader nav a:hover
+{
+	color: #d3c7a9;
+}
