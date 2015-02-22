@@ -32,10 +32,13 @@ chrome.storage.sync.get(function(items) {
     }
 
     //Set default site
-    chrome.storage.sync.set({
-    yoursite: '0',
-     }, function() {
-    });
+    if ((items.yoursite != '1') && (items.yoursite !='2') && (items.yoursite !='3') && (items.yoursite !='4') && (items.yoursite !='5') && (items.yoursite !='6'))
+    {
+        chrome.storage.sync.set({
+        yoursite: '0',
+        }, function() {
+        });
+    }
 });
 }
 
