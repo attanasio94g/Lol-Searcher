@@ -55,7 +55,7 @@ function show()
 
         //Show username selected
         summname.selectedIndex = items.yourindex;
-        //site.selectedIndex = items.yoursite;
+        site.selectedIndex = items.yoursite;
     });
 }
 
