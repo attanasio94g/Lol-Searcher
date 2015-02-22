@@ -79,6 +79,29 @@ function addsite()
     yoursite: selectedsite,
      }, function() {
      });
+
+    chrome.storage.sync.get(function(items) {
+        if(items.yoursite == "1" && items.mydata[items.yourindex].yourserver == "kr")
+        {
+            alert("Lol nexus doesn't support korea server, please select another site!");
+        }
+        else if(items.yoursite == "2" && items.mydata[items.yourindex].yourserver == "kr")
+        {
+            alert("LolKing doesn't support korea server, please select another site!");
+        }
+        else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "kr")
+        {
+            alert("Elophant doesn't support korea server, please select another site!");
+        }
+        else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "ru")
+        {
+            alert("Elophant doesn't support Russian server, please select another site!");
+        }
+        else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "tr")
+        {
+            alert("Elophant doesn't support Turkey server, please select another site!");
+        }
+    });
 }
 
 function reload_page()
