@@ -33,7 +33,7 @@ chrome.storage.sync.get(function(items) {
 
     //Set default site
     chrome.storage.sync.set({
-    yoursite: 'Op',
+    yoursite: '0',
      }, function() {
     });
 });
@@ -84,22 +84,42 @@ function addsite()
         if(items.yoursite == "1" && items.mydata[items.yourindex].yourserver == "kr")
         {
             alert("Lol nexus doesn't support korea server, please select another site!");
+            chrome.storage.sync.set({
+            yoursite: '0',
+            }, function() {
+            });
         }
         else if(items.yoursite == "2" && items.mydata[items.yourindex].yourserver == "kr")
         {
             alert("LolKing doesn't support korea server, please select another site!");
+            chrome.storage.sync.set({
+            yoursite: '0',
+            }, function() {
+            });
         }
         else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "kr")
         {
             alert("Elophant doesn't support korea server, please select another site!");
+            chrome.storage.sync.set({
+            yoursite: '0',
+            }, function() {
+            });
         }
         else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "ru")
         {
             alert("Elophant doesn't support Russian server, please select another site!");
+            chrome.storage.sync.set({
+            yoursite: '0',
+            }, function() {
+            });
         }
         else if(items.yoursite == "3" && items.mydata[items.yourindex].yourserver == "tr")
         {
             alert("Elophant doesn't support Turkey server, please select another site!");
+            chrome.storage.sync.set({
+            yoursite: '0',
+            }, function() {
+            });
         }
     });
 }
