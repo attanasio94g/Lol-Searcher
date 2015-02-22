@@ -52,33 +52,45 @@ select {
   padding: 0 0 0 5px;
   width: 100px;
   height: 25px;
-  color: white;
   font-size: 14px;
   text-align: center;
   -webkit-appearance: none;
-  background-color: #2B547E;
   cursor: pointer;
+  font-family: "Times New Roman";
+  background-color: #e8ab4a;
+  color: black;
+  border: solid 3px;
+  border-top-color: rgb(246, 198, 83);
+  border-right-color: rgb(189, 106, 35);
+  border-bottom-color: rgb(182, 99, 31);
+  border-left-color: rgb(232, 171, 74);
 }
 
 select:hover
 {
-	background-color: #1589FF;
+	background-color: #f6c653;
 }
 
 .flat-button {
+  margin-top: 10px; 
   width: 150px;
   height: 25px;
   font-size: 14px;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  border: solid 1px #A4A5A6;
+  border: solid 3px;
+  border-top-color: rgb(246, 198, 83);
+  border-right-color: rgb(189, 106, 35);
+  border-bottom-color: rgb(182, 99, 31);
+  border-left-color: rgb(232, 171, 74);
   border-radius: 1px;
-  background-color: #2B547E;
-  color: white;
+  background-color: #e8ab4a;
+  color: black;
+  font-family: "Times New Roman";
 }
 
 .flat-button:hover {
-  background-color: #1589FF;
-  color: #fff;
+  background-color: #f6c653;
+  color: black;
 }
