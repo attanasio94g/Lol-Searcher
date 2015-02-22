@@ -11,7 +11,13 @@
   "tabs", 
   "storage",
   "http://*.op.gg/summoner/userName=*",
-  "http://www.op.gg/summoner/userName=*"
+  "http://www.op.gg/summoner/userName=*",
+  "http://www.lolnexus.com/*",
+  "http://www.lolking.net/*",
+  "http://www.elophant.com/league-of-legends/*",
+  "http://quickfind.kassad.in/profile/*",
+  "http://www.lolskill.net/summoner/*",
+  "http://it.loldb.gameguyz.com/analyze/*"
   ],
 
   "icons": { "16": "img/icon_16x16.png",

@@ -46,8 +46,6 @@ function show()
 {
     chrome.storage.sync.get(function(items) 
     {
-        console.log(items.mydata);
-
         for (var i=0; i<items.mydata.length; i++ )
         {
            var opt = document.createElement("option");
