@@ -30,6 +30,12 @@ chrome.storage.sync.get(function(items) {
         }, function() {
         });
     }
+
+    //Set default site
+    chrome.storage.sync.set({
+    yoursite: 'Op',
+     }, function() {
+    });
 });
 }
 
@@ -49,6 +55,7 @@ function show()
 
         //Show username selected
         summname.selectedIndex = items.yourindex;
+        //site.selectedIndex = items.yoursite;
     });
 }
 
