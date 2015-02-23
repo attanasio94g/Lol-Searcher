@@ -9,7 +9,7 @@ a{
 }
 
 /*General options css*/
-.one
+.one, .three, .four
 {
 	width: 60%;
 	margin-left: auto;
@@ -21,7 +21,7 @@ a{
   	height: 16px;
 }
 
-.two, .three, .four
+.two
 {
 	width: 60%;
 	margin-left: auto;

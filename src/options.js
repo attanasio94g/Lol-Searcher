@@ -132,13 +132,14 @@ function reload_page()
 
 document.addEventListener('DOMContentLoaded', show);
 
-document.getElementById('save3').addEventListener('click', function() 
+document.getElementById('site').addEventListener('change', function() 
     {
     addsite()
     reload_page()
     });
 
-document.getElementById('save2').addEventListener('click', function() 
+
+document.getElementById('summname').addEventListener('change', function() 
     {
     addsummname()
     reload_page()
