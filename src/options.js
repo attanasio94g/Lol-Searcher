@@ -63,6 +63,7 @@ function show()
         //Show username selected
         summname.selectedIndex = items.yourindex;
         site.selectedIndex = items.yoursite;
+        popup.checked = items.yourpopup;
     });
 }
 
@@ -134,6 +135,25 @@ function addsite()
     });
 }
 
+//Save into storage if checkbox is checked or not
+function popupoptions()
+{
+    if(document.getElementById("popup").checked == true)
+    {
+        chrome.storage.sync.set({
+        yourpopup: true,
+     }, function() {
+     });
+    }
+    else
+    {
+        chrome.storage.sync.set({
+        yourpopup: false,
+     }, function() {
+     });
+    }
+}
+
 function reload_page()
 {
   location.reload();
@@ -157,5 +177,11 @@ document.getElementById('summname').addEventListener('change', function()
 document.getElementById('save').addEventListener('click', function() 
     {
     addData()
+    reload_page()
+    });
+
+document.getElementById('popup').addEventListener('click', function() 
+    {
+    popupoptions()
     reload_page()
     });

@@ -1,4 +1,19 @@
 //Show the select with nickaname saved with the options page
+function notpopup()
+{
+  chrome.storage.sync.get(function(items) 
+    {
+      if (items.yourpopup == false)
+      {
+        var servername = items.mydata[items.yourindex].yourserver;
+        var summonersname = items.mydata[items.yourindex].yournickname;
+        var selectedsite = items.yoursite;
+
+        gotosite(servername, summonersname, selectedsite);
+      }
+    });
+}
+
 function show()
 {
     chrome.storage.sync.get(function(items) 
@@ -121,6 +136,7 @@ document.onkeypress = function (e) {
 }
 
 document.addEventListener('DOMContentLoaded', show);
+document.addEventListener('DOMContentLoaded', notpopup);
 
 document.getElementById('search').addEventListener('click', function() 
     {
