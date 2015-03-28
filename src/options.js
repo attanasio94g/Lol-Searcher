@@ -1,5 +1,14 @@
 var mydata = [];
 
+//Fix to a bug that not display the fault check on the popup options
+chrome.storage.sync.get(function(items) 
+{
+if (typeof items.yourpopup == "undefined")
+{
+    reload_page();
+}
+}); 
+
 //Save server and nickname inserted into the storage
 function addData()
 {
@@ -52,6 +61,7 @@ function show()
 {
     chrome.storage.sync.get(function(items) 
     {
+        if(typeof items.mydata != "undefined")
         for (var i=0; i<items.mydata.length; i++ )
         {
            var opt = document.createElement("option");
@@ -64,6 +74,13 @@ function show()
         summname.selectedIndex = items.yourindex;
         site.selectedIndex = items.yoursite;
         popup.checked = items.yourpopup;
+        if (typeof items.yourpopup == "undefined") 
+        {
+        chrome.storage.sync.set({
+        yourpopup: true,
+        }, function() {
+        });
+        }
     });
 }
 
