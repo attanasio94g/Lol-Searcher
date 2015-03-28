@@ -27,7 +27,8 @@
 
   "browser_action": {
     "default_icon": "img/icon_48x48.png",
-    "default_title": "Go to your account!"
+    "default_title": "Go to your account!",
+    "default_popup": "popup.html"
   }
 
 }

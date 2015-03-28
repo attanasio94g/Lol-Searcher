@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lol Searcher</title>
+</head>
+
+<body>
+	<p>Fast search</p>
+	<select id="server">
+ 		<option value="kr">KR</option>
+ 		<option selected value="euw">EUW</option>
+ 		<option value="oce">OCE</option>
+ 		<option value="las">LAS</option>
+ 		<option value="ru">RU</option>
+ 		<option value="na">NA</option>
+ 		<option value="eune">EUNE</option>
+ 		<option value="br">BR</option>
+ 		<option value="lan">LAN</option>
+ 		<option value="tr">TR</option>
+	</select>
+	<select id="site">
+		<option selected value="0">Op.gg</option>
+		<option value="1">LolNexus</option>
+		<option value="2">LolKing</option>
+		<option value="3">Elophant</option>
+		<option value="4">Quickfind</option>
+		<option value="5">Lolskill</option>
+		<option value="6">LolDB</option>
+		<option value="7">Carry.gg</option>
+	</select>
+	<input type="text" id="nickname" maxlength="16"></input></br>
+	<button id="search" class="flat-button">Search</button><br>
+
+	<p>Saved search</p>
+	<select id="savedsum">
+		<option selected value="clear"><i>sel user</i></option>
+	</select>
+</body>
+<script src="popup.js"></script>
+</html>
