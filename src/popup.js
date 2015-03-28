@@ -1,19 +1,29 @@
-function searchsum()
+//Show the select with nickaname saved with the options page
+function show()
 {
-	var currentserver = document.getElementById('server').value;
-    var currentprenickname = document.getElementById('nickname').value;
-    var currentsite = document.getElementById('site').value;
+    chrome.storage.sync.get(function(items) 
+    {
+        for (var i=0; i<items.mydata.length; i++ )
+        {
+           var opt = document.createElement("option");
+           opt.value= i;
+           opt.innerHTML = items.mydata[i].yournickname;
+           savedsum.appendChild(opt);
+        }
+    });
+}
 
-    var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
-
+//Go to the selected site
+function gotosite(currentserver, nickname, currentsite)
+{
     //Open the page of the inserted data and give error if wrong data
     if ((currentserver == null) && (nickname == null))
     {
-    	//do nothing actually
+      //do nothing actually
     }
     else if ((currentserver == "") || (nickname == ""))
     {
-    	//do nothing actually
+      //do nothing actually
     }
     else if (currentsite == "0")
     {
@@ -74,35 +84,40 @@ function searchsum()
     }
 }
 
-function show()
-{
-    chrome.storage.sync.get(function(items) 
-    {
-        for (var i=0; i<items.mydata.length; i++ )
-        {
-           var opt = document.createElement("option");
-           opt.value= i;
-           opt.innerHTML = items.mydata[i].yournickname;
-           savedsum.appendChild(opt);
-        }
-        //Show username selected
-        //savedsum.selectedIndex = items.yourindex;
-    });
-}
-
+//Retrieve selected username and server from the storage, the site from the select in popup page and call the function gotosite
 function savedatasearch()
 {
 	var indice = document.getElementById('savedsum').value;
+  var selectedsite = document.getElementById('site2').value;
 
 	chrome.storage.sync.get(function(items) {
     servername = items.mydata[indice].yourserver;
     summonersname = items.mydata[indice].yournickname;
-      
-    chrome.tabs.query({currentWindow: true, active: true}, function(tab) {
-    chrome.tabs.create( { "url": "http://www.carry.gg/current/"+servername+"/"+summonersname+"/" } );
 
+    gotosite(servername, summonersname, selectedsite);
   });
-  });
+}
+
+//Retreve username, server and site from the popup page and call the function gotosite
+function searchsum()
+{
+  var currentserver = document.getElementById('server').value;
+  var currentprenickname = document.getElementById('nickname').value;
+  var currentsite = document.getElementById('site').value;
+
+  var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
+
+  gotosite(currentserver, nickname, currentsite);
+}
+
+//Support for the enter key to search a summoners
+document.onkeypress = function (e) {
+    e = e || window.event;
+
+    if(e.keyCode == "13")
+    {
+      searchsum();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', show);
