@@ -1,5 +1,6 @@
 var mydata = [];
 
+//Save server and nickname inserted into the storage
 function addData()
 {
     var currentserver = document.getElementById('server').value;
@@ -7,6 +8,9 @@ function addData()
 
     var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
 
+    //Check if texbox is clear, if clear doesn't insert nothing into storage
+    if (nickname != '')
+{
 // Get all the items stored in the storage
 chrome.storage.sync.get(function(items) {
     if (Object.keys(items).length > 0 && items.mydata) {
@@ -41,7 +45,9 @@ chrome.storage.sync.get(function(items) {
     }
 });
 }
+}
 
+//Show into the select all summoners name saved into the storage
 function show()
 {
     chrome.storage.sync.get(function(items) 
@@ -60,6 +66,7 @@ function show()
     });
 }
 
+//Save the index of selected summoners name into storage
 function addsummname()
 {
      var index = document.getElementById('summname').value;
@@ -72,6 +79,7 @@ function addsummname()
      });
 }
 
+//Save the index of selected site into storage
 function addsite()
 {
     var selectedsite = document.getElementById('site').value;
@@ -81,6 +89,7 @@ function addsite()
      }, function() {
      });
 
+    //Check for some sites that not support some server
     chrome.storage.sync.get(function(items) {
         if(items.yoursite == "1" && items.mydata[items.yourindex].yourserver == "kr")
         {
