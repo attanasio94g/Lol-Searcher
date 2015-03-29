@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lol Searcher Options!</title>
+	<link rel="stylesheet" type="text/css" href="settings.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+</head>
+
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><img src="img/icon_64x64.png"></li>
+			<li class="active"><a href="settings.html"><span>SETTINGS</span></a></li>
+			<li><a href="about.html"><span>ABOUT</span></a></li>
+		</ul></nav>		
+	</header>
+
+	<div class="one">
+		<div class="title">
+			<span>Add a summuners</span>
+		</div>
+
+		<div class="data">
+			<span>Select the server of the account.</span>
+			<select id="server">
+ 				<option value="kr">KR</option>
+ 				<option selected value="euw">EUW</option>
+ 				<option value="oce">OCE</option>
+ 				<option value="las">LAS</option>
+ 				<option value="ru">RU</option>
+ 				<option value="na">NA</option>
+ 				<option value="eune">EUNE</option>
+ 				<option value="br">BR</option>
+ 				<option value="lan">LAN</option>
+ 				<option value="tr">TR</option>
+			</select></br></br>
+			<span>Insert your username and after press save: </span>
+			<input type="text" id="nickname" maxlength="16"></input></br>
+			<button id="save" class="flat-button">SAVE</button><br>
+		</div>
+	</div>
+
+	<div class="three">
+		<div class="title">
+			<span>My summoners:</span>
+		</div>
+
+		<div class="data">
+			<span>Select the username do you want use: </span>
+			<select id="summname">
+			</select></p>
+		</div>
+	</div>
+
+	<div class="four">
+		<div class="title">
+			<span>Sites:</span>
+		</div>
+
+		<div class="data">
+			<span>Select the site do you want use: </span>
+			<select id="site">
+				<option selected value="0">Op.gg</option>
+				<option value="1">LolNexus</option>
+				<option value="2">LolKing</option>
+				<option value="3">Elophant</option>
+				<option value="4">Quickfind</option>
+				<option value="5">Lolskill</option>
+				<option value="6">LolDB</option>
+				<option value="7">Carry.gg</option>
+			</select></p>
+		</div>
+	</div>
+
+	<div class="five">
+		<div class="title">
+			<span>Popup</span>
+		</div>
+
+		<div class="data">
+			<span>Enable the popup when you click on the button of extension: </span>
+			<input type="checkbox" id="popup" checked></input>
+		</div>
+	</div>
+
+	<script src="options.js"></script>
+</body>
+</html>

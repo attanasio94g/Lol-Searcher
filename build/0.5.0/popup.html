@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lol Searcher</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><img src="img/icon_64x64.png"></li>
+			<li><a href="settings.html" target="_blank"><span>SETTINGS</span></a></li>
+			<li><a href="about.html" target="_blank"><span>ABOUT</span></a></li>
+		</ul></nav>
+	</header>
+
+	<p class="fastse">Insert and search an username</p>
+	<select id="server">
+ 		<option value="kr">KR</option>
+ 		<option selected value="euw">EUW</option>
+ 		<option value="oce">OCE</option>
+ 		<option value="las">LAS</option>
+ 		<option value="ru">RU</option>
+ 		<option value="na">NA</option>
+ 		<option value="eune">EUNE</option>
+ 		<option value="br">BR</option>
+ 		<option value="lan">LAN</option>
+ 		<option value="tr">TR</option>
+	</select>
+	<select id="site">
+		<option selected value="0">Op.gg</option>
+		<option value="1">LolNexus</option>
+		<option value="2">LolKing</option>
+		<option value="3">Elophant</option>
+		<option value="4">Quickfind</option>
+		<option value="5">Lolskill</option>
+		<option value="6">LolDB</option>
+		<option value="7">Carry.gg</option>
+	</select>
+	<p>Username: <input type="text" id="nickname" maxlength="16"></input>
+	<button id="search" class="flat-button">Search</button><br></p>
+
+	<p class="fastse">Search an username saved with the options page</p>
+	<select id="savedsum">
+		<option selected value="clear"><i>Select username</i></option>
+	</select>
+	<select id="site2">
+		<option selected value="0">Op.gg</option>
+		<option value="1">LolNexus</option>
+		<option value="2">LolKing</option>
+		<option value="3">Elophant</option>
+		<option value="4">Quickfind</option>
+		<option value="5">Lolskill</option>
+		<option value="6">LolDB</option>
+		<option value="7">Carry.gg</option>
+	</select>
+</body>
+<script src="popup.js"></script>
+</html>

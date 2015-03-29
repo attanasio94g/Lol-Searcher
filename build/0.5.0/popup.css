@@ -1,0 +1,110 @@
+body 
+{
+	width: 300px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.mainheader
+{
+	margin: 0 auto;
+	background-color: #040507;
+	border-bottom: solid 2px #0C2830;
+}
+
+.mainheader ul li img{
+	width: 45%;
+	height: auto;
+	margin: 5px;
+}
+
+.mainheader nav{
+	height: 40px;
+}
+
+.mainheader nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited{
+	color: #cfba6b;
+	display: inline-block;
+	padding-top: 13px;
+	padding-left: 10px;
+	height: 40px;
+	font-size: 14px;
+	font-family: "Times New Roman";
+}
+
+.mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active a:visited{
+	color: white;
+	text-shadow: none;
+} 
+
+.mainheader nav a:hover
+{
+	color: #d3c7a9;
+}
+
+select {
+  padding: 0 0 0 5px;
+  width: 100px;
+  height: 25px;
+  font-size: 14px;
+  text-align: center;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: "Times New Roman";
+  background-color: #e8ab4a;
+  color: black;
+  border: solid 3px;
+  border-top-color: rgb(246, 198, 83);
+  border-right-color: rgb(189, 106, 35);
+  border-bottom-color: rgb(182, 99, 31);
+  border-left-color: rgb(232, 171, 74);
+}
+
+select:hover
+{
+	background-color: #f6c653;
+}
+
+.flat-button {
+  margin-top: 10px; 
+  width: 150px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 3px;
+  border-top-color: rgb(246, 198, 83);
+  border-right-color: rgb(189, 106, 35);
+  border-bottom-color: rgb(182, 99, 31);
+  border-left-color: rgb(232, 171, 74);
+  border-radius: 1px;
+  background-color: #e8ab4a;
+  color: black;
+  font-family: "Times New Roman";
+}
+
+.flat-button:hover {
+  background-color: #f6c653;
+  color: black;
+}
+
+.fastse
+{
+	font-style: italic;
+	font-size: 14px;
+}
