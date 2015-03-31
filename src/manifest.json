@@ -4,7 +4,7 @@
   "name": "Lol Searcher",
   "options_page": "settings.html",
   "description": "Simple extension for Opera and Chrome that open a page of lol related site with a defined nickname.",
-  "version": "0.5.0",
+  "version": "0.5.1",
 
   "permissions": [
   "tabs", 
