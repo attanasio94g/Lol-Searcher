@@ -44,7 +44,7 @@ function savedatasearch()
     summonersname = items.mydata[indice].yournickname;
 
     chrome.storage.sync.set({
-    yoursite2: selectedsite
+    yoursite2: selectedsite,
     }, function() {
     });
 
@@ -62,7 +62,7 @@ function searchsum()
   var nickname = currentprenickname.replace(/(<([^>]+)>)/ig,""); //Remove html tags
 
   chrome.storage.sync.set({
-    yoursite3: currentsite
+    yoursite3: currentsite,
     }, function() {
     });
 
@@ -132,6 +132,12 @@ function gotosite(currentserver, nickname, currentsite)
       chrome.tabs.create( { "url": "http://it.loldb.gameguyz.com/analyze/search?search_text="+nickname+"&c_server=1_2_3_4_5_6_7_8_9_10" } );
       });
     }
+    else if(currentsite == "7")
+    {
+      chrome.tabs.query({currentWindow: true, active: true}, function(tab) {
+      chrome.tabs.create( { "url": "http://www.carry.gg/current/"+currentserver+"/"+nickname+"/" } );
+      });
+    }
 }
 
 //Support for the enter key to search a summoners
@@ -142,7 +148,7 @@ document.onkeypress = function (e) {
     {
       searchsum();
     }
-};
+}
 
 document.addEventListener('DOMContentLoaded', show);
 document.addEventListener('DOMContentLoaded', notpopup);

@@ -48,7 +48,7 @@ chrome.storage.sync.get(function(items) {
     if ((items.yoursite != '1') && (items.yoursite !='2') && (items.yoursite !='3') && (items.yoursite !='4') && (items.yoursite !='5') && (items.yoursite !='6'))
     {
         chrome.storage.sync.set({
-        yoursite: '0'
+        yoursite: '0',
         }, function() {
         });
     }
@@ -77,7 +77,7 @@ function show()
         if (typeof items.yourpopup == "undefined") 
         {
         chrome.storage.sync.set({
-        yourpopup: true
+        yourpopup: true,
         }, function() {
         });
         }
@@ -92,7 +92,7 @@ function addsummname()
 
      //Save the index of summoners name selected into chrome storage
     chrome.storage.sync.set({
-    yourindex: index
+    yourindex: index,
      }, function() {
      });
 }
@@ -103,7 +103,7 @@ function addsite()
     var selectedsite = document.getElementById('site').value;
 
     chrome.storage.sync.set({
-    yoursite: selectedsite
+    yoursite: selectedsite,
      }, function() {
      });
 
@@ -113,7 +113,7 @@ function addsite()
         {
             alert("Lol nexus doesn't support korea server, please select another site!");
             chrome.storage.sync.set({
-            yoursite: '0'
+            yoursite: '0',
             }, function() {
             });
         }
@@ -129,7 +129,7 @@ function addsite()
         {
             alert("Elophant doesn't support korea server, please select another site!");
             chrome.storage.sync.set({
-            yoursite: '0'
+            yoursite: '0',
             }, function() {
             });
         }
@@ -137,7 +137,7 @@ function addsite()
         {
             alert("Elophant doesn't support Russian server, please select another site!");
             chrome.storage.sync.set({
-            yoursite: '0'
+            yoursite: '0',
             }, function() {
             });
         }
@@ -145,7 +145,7 @@ function addsite()
         {
             alert("Elophant doesn't support Turkey server, please select another site!");
             chrome.storage.sync.set({
-            yoursite: '0'
+            yoursite: '0',
             }, function() {
             });
         }
@@ -158,14 +158,14 @@ function popupoptions()
     if(document.getElementById("popup").checked == true)
     {
         chrome.storage.sync.set({
-        yourpopup: true
+        yourpopup: true,
      }, function() {
      });
     }
     else
     {
         chrome.storage.sync.set({
-        yourpopup: false
+        yourpopup: false,
      }, function() {
      });
     }
@@ -180,25 +180,25 @@ document.addEventListener('DOMContentLoaded', show);
 
 document.getElementById('site').addEventListener('change', function() 
     {
-    addsite();
+    addsite()
     reload_page()
     });
 
 
 document.getElementById('summname').addEventListener('change', function() 
     {
-    addsummname();
+    addsummname()
     reload_page()
     });
 
 document.getElementById('save').addEventListener('click', function() 
     {
-    addData();
+    addData()
     reload_page()
     });
 
 document.getElementById('popup').addEventListener('click', function() 
     {
-    popupoptions();
+    popupoptions()
     reload_page()
     });
